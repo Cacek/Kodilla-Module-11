@@ -7,7 +7,7 @@ $(document).ready(function() {
             str += chars[Math.floor(Math.random() * chars.length)];
         }
         return str;
-    };
+    }
     function Column(name) {
         var self = this; 
 
@@ -36,8 +36,8 @@ $(document).ready(function() {
                 .append($columnCardList);
             return $column;
 
-        }; 
-    };
+        }
+    }
 
     Column.prototype = {
         addCard: function(card) {
@@ -46,7 +46,7 @@ $(document).ready(function() {
         removeColumn: function() {
             this.$element.remove();
         }
-    };
+    }
 
     //Klasa Card
     function Card(description) {
@@ -68,8 +68,8 @@ $(document).ready(function() {
             $card.append($cardDelete)
                 .append($cardDescription);
             return $card;
-        };
-    };
+        }
+    }
 
     Card.prototype = {
         removeCard: function() {
@@ -91,14 +91,14 @@ $(document).ready(function() {
             connectWith: '.column-card-list',
             placeholder: 'card-placeholder'
         }).disableSelection();
-    };
+    }
 
     function initSortable() {
         $('.column-card-list').sortable({
             connectWith: '.column-card-list',
             placeholder: 'card-placeholder'
         }).disableSelection();
-    };
+    }
     $('.create-column').click(function(){
         var name = prompt('Wpisz nazwę kolumny');
         var column = new Column(name);
