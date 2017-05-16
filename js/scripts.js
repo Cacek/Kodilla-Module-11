@@ -49,7 +49,7 @@ $(document).ready(function() {
     }
 
     //Klasa Card
-    function Card(description) {
+    function Card(description) {}
         var self = this;
 
         this.is = randomString();
