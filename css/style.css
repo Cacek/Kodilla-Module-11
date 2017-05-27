@@ -71,7 +71,7 @@ h2 {
 ul {
     list-style-type: none;
     padding-left: 0;
-    min-height: 40px;
+    min-height: 60px;
 }
 
 .card-description {
@@ -79,6 +79,10 @@ ul {
     margin: 5px;
     padding: 5px;
     border-radius: 5px;
+}
+
+.card-placeholder {
+    color: red;
 }
 
 [class*="col-"] {
